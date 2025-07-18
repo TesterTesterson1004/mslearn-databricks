@@ -1,9 +1,8 @@
-Clear-Host
-write-host "Starting script at $(Get-Date)"
-
 param(
     [string]$suffix
 )
+Clear-Host
+write-host "Starting script at $(Get-Date)"
 
 # If no suffix provided, generate a 7-character alphanumeric one
 if (-not $suffix) {
